@@ -1,0 +1,78 @@
+function Search(sObj) {
+	var oFind = document.getElementById(sObj);
+	if (oFind.value.length < 3) {
+		alert('Искомое слово не должно содержать менее трёх символов!');
+		oFind.focus();
+		return false;
+	}
+	return true;
+}
+
+function BackRequest(request) {
+	var http_request = false;
+	if (window.XMLHttpRequest) {
+		http_request = new XMLHttpRequest();
+	} else if (window.ActiveXObject) {
+		try {
+			http_request = new ActiveXObject('Msxml2.XMLHTTP');
+		}
+		catch (e) {
+			try {
+				http_request = new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			catch (e) {}
+		}
+	}
+
+	if (!http_request) {
+		return false;
+	}
+
+	http_request.open('POST', '/inc/back_request.php', true);
+	http_request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	http_request.send(request);
+}
+
+function BackRequest_onclick(iCase) {
+	var cookieUserFrom = GetCookie('user_from');
+	var sUserFrom = (cookieUserFrom != null) ? encodeURIComponent(cookieUserFrom) : '';
+	BackRequest('case=' + iCase + '&user_from=' + sUserFrom);
+}
+
+function openWin(file, title, params) {
+	w = window.open(file, title, params);
+}
+
+function showimg(u, wd, hg) {
+	s = window.open('', 'Pic', 'toolbar=no,location=no,directoties=no,status=no,scrollbars=no,menubar=no,resizable=yes,top=20, left=20,width=' +
+		(wd + 16) + ',height=' + (hg + 16));
+	s.document.open();
+	s.document.writeln('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">' +
+		'<html><head><title>Фото</title></head><body bgcolor="#ffffff" onload="window.self.focus(); return true;" style="margin: 0px;">' +
+		'<table cellspacing="0" cellpadding="5" border="0" style="height: 100%; width: 100%;"><tr><td align="center"><a href="javascript:window.close();"><img src="' +
+		u + '" border="0" width="' + wd + '" height="' + hg + '" alt="Закрыть"></a></td></tr></table></body></html>');
+	s.document.close();
+	s.focus();
+}
+
+function GetBannerCode() {
+	var oCodeDIV = document.getElementById('code_div');
+	oCodeDIV.style.display = (oCodeDIV.style.display == 'none') ? 'block' : 'none';
+}
+
+function GetCookie(sName) {
+	var aCookie = document.cookie.split('; ');
+	for (var i=0; i < aCookie.length; i++) {
+		var aCrumb = aCookie[i].split('=');
+		if (sName == aCrumb[0])
+			return unescape(aCrumb[1]);
+	}
+  return null;
+}
+
+function BodyOnLoad() {
+	var cookieUserFrom = GetCookie('user_from');
+	if (cookieUserFrom == null && document.referrer) {
+		document.cookie = 'user_from=' + escape(document.referrer) + '; path=/';
+	}
+}

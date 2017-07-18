@@ -1,0 +1,316 @@
+/* UI jQuery */
+.ui-autocomplete-loading {
+    background: white url("/jquery/ui-anim_basic_16x16.gif") right center no-repeat;
+}
+.ui-autocomplete-category {
+    font-weight: bold;
+    padding: .2em .4em;
+    margin: 0;
+    line-height: 1.5;
+}
+
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+}
+h1 {
+	font-family: Tahoma;
+	font-size: 14px;
+	display: inline;
+}
+h2 {
+	font-family: Tahoma;
+	font-size: 14px;
+	margin: 5 0 3 0;
+}
+.content {
+	font-family: Tahoma; font-size: 12px;
+}
+.up {
+	font-family: Tahoma; font-size: 11px; color: #ecbc70; vertical-align: top;
+}
+a {
+    color: #000000;
+	 text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+a.bread, a.bread:hover, a.sl, a.sl:hover {
+	font-family: Tahoma;
+	font-size: 16px;
+}
+a.bread {
+	color: #000000;
+	text-decoration: underline;
+}
+a.bread:hover {
+	color: #000000;
+	text-decoration: none;
+}
+a.sl {
+	color: #000000;
+	text-decoration: none;
+}
+a.sl:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+a.gotopage {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+a.gotopage:hover {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: underline;
+}
+a.release {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #000000; text-decoration: none;
+}
+a.release:hover {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #000000; text-decoration: underline;
+}
+a.files {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: underline;
+}
+a.files:hover {font-family: Tahoma;font-size: 12px;color: #000000;text-decoration: none;}
+a.red{font-weight: bold;color: #b80202;text-decoration: none;}
+a.red:hover{font-weight: bold;color: #b80202;text-decoration: underline;}
+a.script{font-family: "Courier New", Courier, monospace; font-size: 13px; color: #000000; text-decoration: underline;}
+a.script:hover{font-family: "Courier New", Courier, monospace; font-size: 13px; color: #000000; text-decoration: none;}
+a.news{text-align: right; color: #727b9d; font-family: Tahoma; font-size: 10px;}
+a.news:hover{text-align: right; color: #51566a; font-family: Tahoma;	font-size: 10px; text-decoration: none;}
+.files {font-family: Tahoma; font-size: 12px;}
+.code{
+	font-family: monospace; font-size: 12px; text-indent: 10px;
+}
+
+
+a.gor-menu {
+	font-family: Tahoma;
+	font-size: 13px;
+	color: #FFFFFF;
+	text-indent: 10px;
+	margin: 0px;
+
+}
+a.gor-menu:hover {
+	font-family: Tahoma;
+	font-size: 13px;
+	color: #FFFFFF;
+	text-indent: 10px;
+	margin: 0px;
+	text-decoration: none;
+}
+
+a.topmenu {
+	font-family: Tahoma;
+	font-size: 13px;
+	color: #bd0d04;
+	text-indent: 10px;
+	margin: 0px;
+	font-weight: bold;
+
+}
+a.topmenu:hover {
+	font-family: Tahoma;
+	font-size: 13px;
+	font-weight: bold;
+	color: #bd0d04;
+	text-indent: 10px;
+	margin: 0px;
+	text-decoration: none;
+}
+
+a.titlenews {
+        color: #164782;
+	font-weight: bold;
+	margin-bottom: 1px;
+	text-decoration: underline;
+}
+
+a.titlenews:hover {
+        color: #164782;
+	font-weight: bold;
+	margin-bottom: 1px;
+	text-decoration: none;
+}
+
+a.anons {
+	font-family: Tahoma; font-size: 12px; text-decoration: none; color: #000000;
+
+}
+a.anons:hover {
+	font-family: Tahoma; font-size: 12px; text-decoration: underline; color: #b80202;
+}
+
+.datenews {
+        font-size: 10px;
+	color: #f26522;
+}
+
+div.news {
+	padding-bottom: 4px;
+	margin-bottom: 10px;
+}
+
+div.newscontext {
+        font-family: Tahoma;
+	display: block;
+	padding-bottom: 4px;
+	margin-bottom: 10px;
+}
+div.context {
+	width: 600px;
+	margin-bottom: 10px;
+}
+#navlist, #forumlist
+{
+margin-left: 0;
+margin-top: 5px;
+padding-left: 5px;
+list-style: none;
+}
+
+#navlist li, #forumlist li
+{
+padding-left: 10px;
+background-image: url(/img/arrow.gif);
+background-repeat: no-repeat;
+background-position: 0 .4em;
+margin-bottom: 3px;
+}
+
+#navlist-sq
+{
+margin-left: 0;
+margin-top: 5px;
+padding-left: 5px;
+list-style: none;
+}
+
+#navlist-sq li
+{
+padding-left: 10px;
+background-repeat: no-repeat;
+background-position: 0 .4em;
+background: transparent url(/img/list-on.gif) left center no-repeat; color: black;
+}
+
+ul.toollist
+{
+margin-left: 0;
+margin-top: 5px;
+padding-left: 20px;
+list-style-type: square;
+margin-bottom: 5px;
+}
+li.toollist
+{
+	margin-bottom: 4px;
+}
+
+ul.normal
+{
+margin-left: 0;
+margin-top: 5px;
+padding-left: 20px;
+list-style-type: square;
+font-size: 12px;
+}
+
+ul.link, ul.article
+{
+margin-left: 0;
+margin-top: 5px;
+padding-left: 20px;
+list-style-type: square;
+font-size: 11px;
+}
+ul.link
+{
+font-size: 11px;
+}
+ul.article
+{
+font-size: 12px;
+}
+li.article
+{
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+.title {
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+}
+.spacer {margin: 0px; padding: 0px;}
+
+#mail
+{
+	margin-left: 0;
+	margin-top: 5px;
+	padding-left: 5px;
+	list-style: none;
+	list-style-type: square;
+}
+#mailcontainer ul{list-style-type: none; text-align: left;}
+#mailcontainer ul li a {background: transparent url(/img/list-off.gif) left center no-repeat; padding-left: 15px; text-align: left; font: normal 11px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif; text-decoration: none; color: #4c4c4c;}
+#mailcontainer ul li a:hover {background: transparent url(/img/list-on.gif) left center no-repeat; color: black;}
+#mailcontainer ul li a#current {background: transparent url(/img/list-active.gif) left center no-repeat; color: #000000;}
+.script {font-family: "Courier New", Courier, monospace; font-size: 13px; color: #686868;}
+.variable {font-family: "Courier New", Courier, monospace; font-size: 15px; color: #000000; font-weight: bold;}
+hr.yellow {
+    background-color:    #b80202;
+    color: #b80202;
+    border:              1px none #ffad17;
+    margin:              3px 0px 3px 0px;
+    height:              1px;
+}
+
+a img {border:0}
+span.count a *{
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3
+}
+span.count a *{
+	filter:alpha(opacity=20);
+	-moz-opacity:0.3
+}
+span.count2 a *{
+	filter:alpha(opacity=0);
+	-moz-opacity:0.3
+}
+span.count a:hover *{
+	filter:alpha(opacity=100);
+	-moz-opacity:1.0
+}
+span.count2 a:hover *{
+	filter:alpha(opacity=100);
+	-moz-opacity:1.0
+}
+
+.vertimage {
+	float: right; padding-top: 3px;
+	margin: 0 0 10 10;
+}
+.gorimage {
+	float: right; padding-top: 3px;
+	margin: 0 0 10 10;
+}
